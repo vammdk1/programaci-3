@@ -1,6 +1,6 @@
 package recursividad;
 
-public class main {
+public class mRecursividad {
 	
 	public static void contar(int current, int end) {
 		if (current != end) {
@@ -17,7 +17,7 @@ public class main {
 		}else if (n==1) {
 			return 1;
 		}else {
-			 System.out.println("Debes ingresar un tamaño mayor o igual a 1");
+			 System.out.println("Debes ingresar un taÃ±o mayor o igual a 1");
 		     return -1; 
 		}
 	}
@@ -36,10 +36,10 @@ public class main {
 		}else if(actual<=M){
 			contadorInverso(M,actual+1); // si se cambia el syso de antes de la llamada a despues, podemos crear una escalera inversa
 			System.out.println("Decreciendo: "+actual);
-		//si la llamada está en , por ejemplom, el escalon 3 de 10 significa que en este escalon la n vale 3 
+		//si la llamada estï¿½ en , por ejemplom, el escalon 3 de 10 significa que en este escalon la n vale 3 
 		//pero por orden de comandos primero imprime el valor de 3 y luego hace la llamada.
-		//cuando invertimos el orden de los comandos el programa primero hace la nueva llamada y luego imprime el número, lo que lo fuerza a esperar el
-		//final de la recursiva y imprime primero el último valor de la llamda ya que primero vuelve y luego imprime.
+		//cuando invertimos el orden de los comandos el programa primero hace la nueva llamada y luego imprime el nï¿½mero, lo que lo fuerza a esperar el
+		//final de la recursiva y imprime primero el ï¿½ltimo valor de la llamda ya que primero vuelve y luego imprime.
 		}
 	}
 	
@@ -52,8 +52,8 @@ public class main {
 		}	
 		return 0;
 	}
-	//2 calcular el resultado de una divición
-	//3 un método que reciba un string y devuelva ese estring invertido 
+	//2 calcular el resultado de una diviciï¿½n
+	//3 un mï¿½todo que reciba un string y devuelva ese estring invertido 
 	
 	public static void main (String[] args) {
 		//contar(0,10);
