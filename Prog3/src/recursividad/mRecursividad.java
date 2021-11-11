@@ -11,6 +11,7 @@ public class mRecursividad {
 	
 	public static int fibonacci(int n) {
 		if(n>1){
+			//System.out.println("prueba");
 			return fibonacci(n-1)+fibonacci(n-2);
 		}else if(n==0) {
 			return 0;
@@ -39,30 +40,16 @@ public class mRecursividad {
 		//si la llamada estï¿½ en , por ejemplom, el escalon 3 de 10 significa que en este escalon la n vale 3 
 		//pero por orden de comandos primero imprime el valor de 3 y luego hace la llamada.
 		//cuando invertimos el orden de los comandos el programa primero hace la nueva llamada y luego imprime el nï¿½mero, lo que lo fuerza a esperar el
-		//final de la recursiva y imprime primero el ï¿½ltimo valor de la llamda ya que primero vuelve y luego imprime.
+		//final de la recursiva y imprime primero el último valor de la llamda ya que primero vuelve y luego imprime.
 		}
 	}
 	
-	//1 calcular el factorial
-	public int factorial(int n, int total) {
-		if(n>=0) {
-			System.out.println(n);
-			factorial(n-1,total*=n-1);
-			return total;
-		}	
-		return 0;
-	}
-	//2 calcular el resultado de una diviciï¿½n
-	//3 un mï¿½todo que reciba un string y devuelva ese estring invertido 
-	
 	public static void main (String[] args) {
 		//contar(0,10);
-		/**for (int i=0; i<100; i++) {
-			System.out.print(fibonacci(i)+" ");
-		}**/
-		contadorM(10, 0);
-		System.out.println("--------");
-		contadorInverso(10,0);
+		//System.out.println(fibonacci(500));
+		//contadorM(10, 0);
+		//System.out.println("--------");
+		//contadorInverso(10,0);
 		
 	}
 

@@ -10,17 +10,17 @@ import java.util.List;
 public class Ejercicios {
 	private static int uno=1;
 	
-	public static void factorial(int n, int total) {
+	public static int factorial(int n, int total) {
 		if(n>1) {
 			total*=n;
 			n-=1;
-			System.out.println(total);
-			factorial(n,total);
-		}		
+			return factorial(n,total);
+		}	
+		return total;
 	}
 	
 	public static Integer calcularC(int dividendo, int divisor,int cociente) {
-		if(divisor > 0 && dividendo>0) {
+		if(divisor > 0 && dividendo>0 && dividendo-divisor>=0) {
 			dividendo = dividendo-divisor;
 			cociente+=1;
 			return calcularC(dividendo, divisor, cociente);
@@ -36,7 +36,7 @@ public class Ejercicios {
 			lista.add(i,letra);
 			}
 			invertirString(palabra, ronda, lista);
-		}else if (ronda<palabra.length()/2){
+		}else if (ronda<palabra.length()){
 			String l1=lista.get(palabra.length()-1-ronda);
 			String l2=lista.get(ronda);
 			lista.set(ronda,l1);//primera letra de la ronda
@@ -47,12 +47,23 @@ public class Ejercicios {
 		return lista;
 	}
 	
+	public static String InvertirString2(String palabra,int i ) {
+		if(i < 0) {return "";}
+		return palabra.charAt(i)+ InvertirString2(palabra, i-1);
+		
+	}
+	
 	public static void main (String[] args) {
 		ArrayList lista;
-		//factorial(10,uno);
-		//System.out.println(calcularC(20, 5, 0));
-		System.out.println(invertirString("potasio",0, lista = new ArrayList<>()));	
-		
+		System.out.println("Factorial:"+factorial(10,uno));
+		System.out.println("------");
+		System.out.println("Cociente:"+calcularC(200,5, 0));
+		System.out.println("------");
+		System.out.println("Invertido:"+invertirString("potasio",0, lista = new ArrayList<>()));	
+		System.out.println("------");
+		System.out.println("Invertido2:"+InvertirString2("potasio","potacio".length()-1));	
+		System.out.println("------");
+		//hacer los ejercicios: 3,10 ( arma frases al revés),11
 		
 		
 	}	
