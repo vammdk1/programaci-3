@@ -1,0 +1,37 @@
+package recursividad;
+
+import java.util.ArrayList;
+
+
+public class ProblemasRecursividad {
+	
+	private static ArrayList<String> aux = new ArrayList<>();
+	
+	//práctica 5B.1 parte 1
+	public static void combinatoria(char[] lista,int posicion,String respuesta,int contadorN,int limite) {
+		if(posicion==0) {
+			aux.add(respuesta);
+		}else {
+			for(int i=0;i<lista.length;i++) {
+				if(Character.isDigit(lista[i])) {
+					if(contadorN<limite) {
+						combinatoria(lista, posicion-1, respuesta+lista[i],contadorN+1,limite);	
+					} 
+					}else {
+						combinatoria(lista, posicion-1, respuesta+lista[i],contadorN+1,limite);	
+				}
+				
+			}
+		}
+	}
+	
+	public static void main (String[] args) {
+		char[] lista2 = {'A','B','C','1','2'};
+		//System.out.println(lista2.toString());
+		combinatoria(lista2,3,"",0,1);
+		System.out.println(aux.toString());
+		
+		// para el jueves: hacer el ejercicio 4,5 y 7
+	}
+
+}
