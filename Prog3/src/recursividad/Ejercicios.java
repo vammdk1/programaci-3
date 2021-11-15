@@ -53,6 +53,27 @@ public class Ejercicios {
 		
 	}
 	
+	public static boolean palindromo(String palabra,int complemento) {
+		if(complemento>=palabra.length()) {
+			return true;
+		}else if(palabra.charAt(complemento)!=palabra.charAt((palabra.length()-1)-complemento)) {
+			return false;
+		}else{
+			return palindromo(palabra, complemento+1);
+		}
+	}
+	
+	public static String Hexadecimal(int dividendo, String resto) {
+		char[] Hexa = {'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E'};//hay que usar comillas simples
+		if(dividendo == 0) {
+			return "0";
+		}else {
+		 int Nresto=dividendo%16;
+		 return Hexadecimal(Nresto, resto);
+		}
+		
+	}
+	
 	public static void main (String[] args) {
 		ArrayList lista;
 		System.out.println("Factorial:"+factorial(10,uno));
@@ -63,7 +84,10 @@ public class Ejercicios {
 		System.out.println("------");
 		System.out.println("Invertido2:"+InvertirString2("potasio","potacio".length()-1));	
 		System.out.println("------");
-		//hacer los ejercicios: 3,10 ( arma frases al revés),11
+		System.out.println("Palíndromo:"+palindromo("haneah",0));
+		System.out.println("------");
+		System.out.println(Hexadecimal(30, "0"));
+		//hacer los ejercicios: 10 ( arma frases al revés),11
 		
 		
 	}	
