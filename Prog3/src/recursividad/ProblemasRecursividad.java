@@ -18,7 +18,7 @@ public class ProblemasRecursividad {
 						combinatoria(lista, posicion-1, respuesta+lista[i],contadorN+1,limite);	
 					} 
 					}else {
-						combinatoria(lista, posicion-1, respuesta+lista[i],contadorN+1,limite);	
+						combinatoria(lista, posicion-1, respuesta+lista[i],contadorN,limite);	
 				}
 				
 			}
