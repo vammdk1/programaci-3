@@ -27,25 +27,19 @@ public class ProblemasRecursividad {
 	
 	public static void ejer4(String numeros, int pos) {
 		StringBuilder numerosN = new StringBuilder(numeros);
-		if(pos==numeros.length()) {
-			System.out.println(numeros);
-		}else {
 			for(int i=numeros.length()-pos-1;i>=0;i--) {
-				char p = numeros.charAt(i);
 				if(numeros.charAt(i)=='b') {
 					numerosN.setCharAt(i, '0');
 					numeros=numerosN.toString();
 					ejer4(numeros,pos+1);
-				}else if(numeros.charAt(i)=='0') {
-					System.out.println("prueba");
-					numerosN.setCharAt(i, '1');
-					numeros=numerosN.toString();
-					ejer4(numeros,pos+1);
 				}
-				ejer4(numeros,pos+1);
-			}
+				//System.out.println("prueba");
+				numerosN.setCharAt(i, '1');
+				numeros=numerosN.toString();
+				//ejer4(numeros,pos+1);
+				System.out.println(numeros);
+				//ejer4(numeros,pos+1);
 		}
-		
 	}
 	
 	public static void main (String[] args) {
@@ -54,7 +48,7 @@ public class ProblemasRecursividad {
 		//combinatoria(lista2,3,"",0,1);
 		//System.out.println(aux.toString());
 		System.out.println("-------------");
-		ejer4("1b", 0);
+		ejer4("1bb", 0);
 		// para el jueves: hacer el ejercicio 4,5 y 7
 	}
 
