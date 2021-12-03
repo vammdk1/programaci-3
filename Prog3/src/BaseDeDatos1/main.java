@@ -18,9 +18,9 @@ public class main {
 		}
 		
 		try {
-			Connection conn = DriverManager.getConnection("jdbc:sqlite:basededatos.db");
+			Connection conn = DriverManager.getConnection("jdbc:sqlite:basededatos.db");//establece la conexiÃ³n con la base de datos
 			
-			Statement stmt = conn.createStatement(); //creamos OBLIGATORIAMENTE esta "declaración" para poder jacer consultas
+			Statement stmt = conn.createStatement(); //creamos OBLIGATORIAMENTE esta "declaraciï¿½n" para poder jacer consultas
 			ResultSet rs = stmt.executeQuery("SELECT nombre,apellido,id FROM usuario where cartera > 0.0"); //consulta a la base de datos
 			//la consulta toma tal cual lo que le manadamos como una consula sql
 			//las conultas tienen que ser optimizadas , es decir , si queremos nombre y apellido, pedir solo esas dos cosas, y no usar "*"
@@ -30,7 +30,7 @@ public class main {
 				String apellido = rs.getString("apellido");
 				int t = rs.getInt("id");
 				
-				//hacemos print de la información
+				//hacemos print de la informaciï¿½n
 				//System.out.println(nombre+" "+apellido+" "+t);
 				System.out.println(String.format("%s - %s - %d", nombre, apellido , t));
 				//syso pro : %d double, %s string, %s string
@@ -44,7 +44,7 @@ public class main {
 				String apellido = rs.getString("apellido");
 				int t = rs.getInt("id");
 				
-				//hacemos print de la información
+				//hacemos print de la informaciï¿½n
 				//System.out.println(nombre+" "+apellido+" "+t);
 				System.out.println(String.format("%s - %s - %d", nombre, apellido , t));
 				//syso pro : %d double, %s string, %s string
@@ -54,7 +54,7 @@ public class main {
 			
 			//--------------------------------------
 			rs.close(); //cierre de la consulta
-			stmt.close(); // cierre de la declaración
+			stmt.close(); // cierre de la declaraciï¿½n
 			
 			conn.close();
 		}catch (Exception e) {
