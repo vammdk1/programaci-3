@@ -13,7 +13,7 @@ public class Ejercicio14 {
 			lista2.put(x.getEntrega(), x.getNombre());
 			System.out.println(lista2);
 		}
-		return new ArrayList<Envio>(lista2);
+		return new ArrayList<envio>(lista2);
 	}
 
 }
