@@ -48,6 +48,10 @@ public class Producto implements Comparable<Producto>{
   		return Integer.hashCode(id);
 	// TODO Auto-generated method stub
 }
+  	
+  	public String toString() {
+  		return "(nombre:"+this.getNombre()+"|Unidades:"+this.getUnidades()+"|Entrega:"+this.getEntrega()+")";
+  	}
 
 	@Override
 	public int compareTo(Producto o) {
