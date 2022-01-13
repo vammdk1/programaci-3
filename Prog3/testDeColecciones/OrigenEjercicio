@@ -1,0 +1,41 @@
+1-Método ordenarPalabras que recibe una lista de Strings y devuelve la lista ordenada alfabéticamente.
+
+2-Método ordenarPalabrasInverso que recibe una lista de Strings y devuelve la lista ordenada alfabéticamente de manera inversa.
+
+3-Método ordenarPalabrasLongitud que recibe una lista de Strings y devuelve la lista ordenada de menor a mayor longitud de las palabras.
+
+4-Método ordenarPalabrasLongitudInv que recibe una lista de Strings y devuelve la lista ordenada de mayor a menor longitud de los palabras.
+
+5-Método ordenarProductosId que recibe una lista de Productos y la devuelve ordenada por el identificador de pedido, definiendo previamente un orden natural
+ en Producto.
+
+6-Método ordenarProductosEntrega que recibe una lista de Productos y la devuelve ordenada por la fecha de entrega de más reciente a más lejana en el tiempo.
+
+7-Método existePalabra que recibe una lista de palabras y una palabra a buscar en la lista e indica con un valor booleano si la palabra existe o no en la lista.
+
+8-Método existeProducto que recibe una lista de productos y un producto a buscar en la lista e indica con una valor booleano si el producto existe o no 
+en la lista. Dos productos se consideran que son iguales si tienen el mismo id.
+
+9-Método convertirMayusculas que recibe una lista de palabras y devuelve la lista con todas sus palabras convertidas en mayúsculas.
+
+10-Método eliminarDuplicados que recibe una lista de palabras y devuelve una nueva lista de palabras eliminando los elementos duplicados de la primera lista.
+ No importa el orden resultante en la nueva lista de palabras.
+
+11-Método eliminarDuplicados que recibe una lista de palabras y devuelve una nueva lista de palabras eliminando los elementos duplicados de la primera lista. 
+Se debe mantener el orden relativo de las palabras de la primera lista.
+
+12-Método eliminarDuplicados que recibe una lista de Productos y devuelve una nueva lista de Productos eliminando los elementos duplicados de la primera lista.
+ Se debe mantener el orden relativo de los productos de la primera lista. Se considera que dos Productos son iguales si tienen el mismo id.
+
+13-Método eliminarDuplicados que recibe una lista de Productos y devuelve una nueva lista de Productos eliminando los elementos duplicados de la primera lista.
+ Se considera que dos Productos son iguales si tienen el mismo id. La lista devuelta debe estar ordenada por fecha de entrega del producto (de más reciente a más lejana en el tiempo). Se considera que dos productos son iguales si tienen el mismo id.
+
+14-Método agruparEnvios que recibe una lista de Productos y devuelve una lista de Envios, que agrupa en cada fecha todos los Productos que tienen que ser 
+enviados en esa misma fecha.
+
+15-Método agruparEnvios que recibe una lista de Productos y devuelve una lista de Envios, que agrupa en cada fecha todos los Productos que tienen que ser 
+enviados en esa misma fecha. La lista de envios resultado debe estar ordenada por fecha de entrega, de más lejana a más reciente en el tiempo.
+
+16-En este ejercicio, se debe implementar una clase Ejercicio16 que debe tener sus métodos de instancia (no estáticos). El constructor de la clase debe recibir 
+una lista de Productos que deberá almacenar de la forma más adecuada para su funcionalidad. La clase debe proporcionar un método obtenerProductos que recibe una fecha y devuelve la lista de todos los productos cuyo envio se realiza dicho día (vacía si no hay entregas para la fecha indicada). También un método obtenerFechas que obtiene una lista, ordenada de fecha más reciente a fecha más lejana, con todas las fechas de entrega distintas en los productos recibidos en el constructor de la clase.
+
