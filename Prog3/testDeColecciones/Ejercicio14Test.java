@@ -1,4 +1,9 @@
 import org.junit.Test;
+
+import Colecciones.Ejercicio14;
+import Colecciones.Envio;
+import Colecciones.Producto;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 

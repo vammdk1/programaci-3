@@ -33,6 +33,25 @@ public class Producto implements Comparable<Producto>{
     public LocalDate getEntrega() {
         return entrega;
     }
+    
+    @Override
+    public boolean equals(Object o) {
+	if(!(o instanceof Producto))
+		return false;
+	
+	Producto p = (Producto) o;
+	return this.id==p.id;
+}
+  
+  	@Override
+  	public int hashCode() {
+  		return Integer.hashCode(id);
+	// TODO Auto-generated method stub
+}
+  	
+  	public String toString() {
+  		return "(nombre:"+this.getNombre()+"|Unidades:"+this.getUnidades()+"|Entrega:"+this.getEntrega()+")";
+  	}
 
 	@Override
 	public int compareTo(Producto o) {
