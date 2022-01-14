@@ -8,17 +8,17 @@ import java.util.List;
 
 public class Ejercicio08 {
 	
-	public static List<String> lista =new ArrayList<>();//--> Se recomienda esta nomenclatura para la futura creaciòn de listas
+	public static List<String> lista =new ArrayList<>();//--> Se recomienda esta nomenclatura para la futura creaciï¿½n de listas
 	public static List<String> lb= Arrays.asList("Hola","chao","dia","tarde","columpio");
 	
 	public static void main(String[] args) {
-		lista.addAll(lb); //-> agrega la "Lista" de elementos a la array list
-		System.out.println(lista.toString());
-		Collections.sort(lista);
-		System.out.println(lista);
-		System.out.println(Collections.max(lista));//-> nos regresa el último valor de una colección
-		System.out.println(Collections.min(lista));//-> nos regresa el primer valor de una colección
-		Collections.shuffle(lista);
-		System.out.println(lista);	
+	
+	}
+
+	public static boolean existeProducto(List<Producto> productos, Producto producto) {
+		for(Producto p: productos) {
+				if(p.compareTo(producto)==0)return true;
+		}
+		return false;
 	}
 }

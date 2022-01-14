@@ -1,6 +1,8 @@
 package recursividad;
 
 import java.util.ArrayList;
+import java.util.List;
+
 
 
 public class ProblemasRecursividad {
@@ -42,14 +44,33 @@ public class ProblemasRecursividad {
 		}
 	}
 	
+	public static void imprimirStrNumericos(String n,int x) {
+		StringBuilder numerosN = new StringBuilder(n);
+		for(int i=n.length()-1;i>=0;i--) {
+			if(n.charAt(i)=='#') {	
+				numerosN.setCharAt(i, '0');
+				n=numerosN.toString();
+				imprimirStrNumericos(n,0);
+			}
+			if(i==x) {
+				
+			}
+			System.out.println(n);
+			
+		}
+		
+		
+	}
 	public static void main (String[] args) {
 		char[] lista2 = {'A','B','C','1','2'};
 		//System.out.println(lista2.toString());
 		//combinatoria(lista2,3,"",0,1);
 		//System.out.println(aux.toString());
 		System.out.println("-------------");
-		ejer4("1bb", 0);
+		//ejer4("1bb", 0);
 		// para el jueves: hacer el ejercicio 4,5 y 7
+		imprimirStrNumericos("23#",0);
+		
 	}
 
 }

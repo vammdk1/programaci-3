@@ -1,4 +1,9 @@
 import org.junit.Test;
+
+import Colecciones.Ejercicio06;
+import Colecciones.Ejercicio08;
+import Colecciones.Producto;
+
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertFalse;
 
